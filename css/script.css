@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #9c27ca, #b6ab13);
+}
+.container{
+    position: relative;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .box{
+    position: relative;
+    width: 350px;
+    background: #0e0e0e;
+    padding: 20px;
+    box-shadow:  15px 15px 15px rgb(0, 0, 0,0.1);
+}
+.container .box h2{
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    width: 100%;
+    text-indent: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+.container .box #ShoppingList{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.container .box #ShoppingList input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+.container .box #ShoppingList button{
+    background: #187905;
+    color: rgb(0, 0, 0);
+    min-width: 100px;
+    font-weight: 500;
+    border: 1px solid;
+    cursor: pointer;
+}
+.container ol{
+    position: relative;
+    padding: 10px 20px 10px 40px;
+    width: 350px;
+    min-height: 300px;
+    background: #ffffff;
+    box-shadow:  15px 15px 15px rgb(0, 0, 0,0.1);
+}
+.container ol li{
+    position: relative;
+    font-size: 1.3em;
+    height: 45px;
+}
+.container ol li .remove{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background:url(https://www.pngall.com/wp-content/uploads/5/Red-Minus-PNG-Download-Image.png);
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.container ol li.done p{
+    text-decoration: line-through;
+    color: #08c227;
+}
+.container ol li.done p:after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    width: 25px;
+    height: 25px;
+    background:url(https://banner2.cleanpng.com/20200215/xgs/transparent-green-logo-symbol-circle-h55e7a0d14054758.8859985915850570440216.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}

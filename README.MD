@@ -1,0 +1,1 @@
+This code creates a shopping list where users can add items via a form (ShoppingList), each item appears as a list item (<li>) in an ordered list (<ol>). Users can mark items as done by clicking on them and delete items by clicking on a remove icon located on the right of each item. The script handles user interactions using event listeners and DOM manipulation methods.
